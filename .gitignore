@@ -1,0 +1,4 @@
+*.pyc
+__pycache__/
+yt_sum_env/
+.env 
