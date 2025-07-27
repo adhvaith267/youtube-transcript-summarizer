@@ -82,7 +82,7 @@ Once everything is set up, you can start the Flask server.
 python app.py
 ```
 
-The application will be running at **http://122.0.0.1:5000**. Open this URL in your browser to use the app.
+The application will be running at **http://localhost:5000**. Open this URL in your browser to use the app.
 
 ---
 
