@@ -2,7 +2,6 @@
 
 A sleek, modern web application for fetching YouTube video transcripts and generating high-quality summaries using the Google Gemini API. The frontend is built with Tailwind CSS for a beautiful, responsive dark-mode interface.
 
-![image](https://user-images.githubusercontent.com/12345/your-screenshot.png) <!-- It's recommended to add a screenshot of your beautiful UI here! -->
 
 ## Features
 
