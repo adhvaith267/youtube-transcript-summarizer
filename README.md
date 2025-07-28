@@ -85,5 +85,3 @@ python app.py
 The application will be running at **http://localhost:5000**. Open this URL in your browser to use the app.
 
 ---
-
-This README should now accurately reflect the project in its current, visually updated state. Let me know if you need any other adjustments to it. 
