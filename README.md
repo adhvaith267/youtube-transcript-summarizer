@@ -66,7 +66,6 @@ services/gemini.py
 - Python **3.11+**
 - A **Google Gemini API Key**
 
----
 
 ### 2️⃣ Get Your Gemini API Key
 
@@ -75,7 +74,6 @@ services/gemini.py
 3. Enable the **Gemini API**
 4. Generate an API key
 
----
 
 ### 3️⃣ Clone the Repository
 
@@ -84,7 +82,6 @@ git clone https://github.com/your-username/yt-summarizer.git
 cd yt-summarizer
 ```
 
----
 
 ### 4️⃣ Create & Activate Virtual Environment
 
@@ -102,7 +99,6 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
----
 
 ### 5️⃣ Install Dependencies
 
@@ -110,7 +106,6 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
 
 ### 6️⃣ Configure Environment Variables
 
@@ -122,7 +117,6 @@ GEMINI_API_KEY=YOUR_API_KEY_HERE
 
 ⚠️ **Do NOT wrap the key in quotes**  
 
----
 
 ### 7️⃣ Run the Application
 
@@ -136,6 +130,5 @@ Open in your browser:
 http://localhost:5000
 ```
 
----
 
 
