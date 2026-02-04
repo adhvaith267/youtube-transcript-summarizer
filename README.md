@@ -58,26 +58,6 @@ services/gemini.py
 
 ---
 
-## 📁 Project Structure
-
-```
-yt-summarizer/
-│
-├── app.py
-├── routes/
-│   └── main.py
-├── services/
-│   ├── gemini.py
-│   └── youtube.py
-├── templates/
-│   └── index.html
-├── static/
-│   └── css / js assets
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
 ---
 
 ## ⚙️ Setup & Installation
