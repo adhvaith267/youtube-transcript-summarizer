@@ -142,7 +142,6 @@ GEMINI_API_KEY=YOUR_API_KEY_HERE
 ```
 
 ⚠️ **Do NOT wrap the key in quotes**  
-⚠️ **Never commit `.env` to GitHub**
 
 ---
 
@@ -157,23 +156,6 @@ Open in your browser:
 ```
 http://localhost:5000
 ```
-
----
-
-## 🔒 Security Notes
-
-- `.env` is excluded via `.gitignore`
-- API keys are never exposed to frontend code
-- Rotate your key immediately if leaked
-
----
-
-## 📌 Future Improvements
-
-- Transcript chunking for very long videos
-- Summary length / style controls
-- Deployment (Render, Railway, Fly.io)
-- Transcript caching with a database
 
 ---
 
