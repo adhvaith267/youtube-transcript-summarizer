@@ -177,6 +177,4 @@ http://localhost:5000
 
 ---
 
-## 📄 License
 
-This project is intended for educational and personal use.
