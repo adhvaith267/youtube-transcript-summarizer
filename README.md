@@ -58,7 +58,6 @@ services/gemini.py
 
 ---
 
----
 
 ## ⚙️ Setup & Installation
 
