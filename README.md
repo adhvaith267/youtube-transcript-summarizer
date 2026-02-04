@@ -3,7 +3,6 @@
 A sleek, modern web application for fetching YouTube video transcripts and generating high-quality summaries using **Google Gemini**.  
 The frontend is built with **Tailwind CSS**, featuring a clean, responsive dark-mode UI, while the backend streams AI summaries in real time.
 
----
 
 ## 🚀 Features
 
@@ -14,7 +13,6 @@ The frontend is built with **Tailwind CSS**, featuring a clean, responsive dark-
 - 🎥 **Efficient Transcript Fetching** using `yt-dlp`
 - 🔐 **Secure API Key Handling** with `.env`
 
----
 
 ## 🧠 Gemini Model
 
@@ -36,7 +34,6 @@ Model usage is defined in:
 services/gemini.py
 ```
 
----
 
 ## 🛠 Technology Stack
 
@@ -56,7 +53,6 @@ services/gemini.py
 - yt-dlp (transcript fetching)
 - python-dotenv (environment variables)
 
----
 
 
 ## ⚙️ Setup & Installation
