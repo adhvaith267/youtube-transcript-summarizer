@@ -1,6 +1,5 @@
-Flask
-youtube-transcript-api
+flask
 yt-dlp
 requests
-google-generativeai
-python-dotenv 
+python-dotenv
+google-genai

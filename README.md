@@ -1,87 +1,182 @@
 # YT Summarizer ✨
 
-A sleek, modern web application for fetching YouTube video transcripts and generating high-quality summaries using the Google Gemini API. The frontend is built with Tailwind CSS for a beautiful, responsive dark-mode interface.
+A sleek, modern web application for fetching YouTube video transcripts and generating high-quality summaries using **Google Gemini**.  
+The frontend is built with **Tailwind CSS**, featuring a clean, responsive dark-mode UI, while the backend streams AI summaries in real time.
 
+---
 
-## Features
+## 🚀 Features
 
--   **Stunning Dark-Mode UI:** A modern, visually appealing interface built with Tailwind CSS.
--   **Gemini-Powered Summaries:** Leverages the powerful `gemini-1.5-flash` model for fast and accurate summaries.
--   **Multi-Language Support:** Summarize transcripts in English, German, French, Spanish, Japanese, Korean, or the original language of the transcript.
--   **Real-time Streaming:** Summaries are streamed to the UI word-by-word as they are generated.
--   **Efficient Transcript Fetching:** Uses `yt-dlp` to efficiently find all available transcripts for a video.
+- 🌙 **Modern Dark-Mode UI** built with Tailwind CSS
+- 🤖 **Gemini-Powered Summaries** using `models/gemini-2.5-flash`
+- 🌍 **Multi-Language Support** (English, German, French, Spanish, Japanese, Korean, and original transcript language)
+- ⚡ **Real-Time Streaming** summaries (chunk-by-chunk)
+- 🎥 **Efficient Transcript Fetching** using `yt-dlp`
+- 🔐 **Secure API Key Handling** with `.env`
 
-## Technology Stack
+---
 
--   **Backend:** Python, Flask
--   **AI:** Google Gemini API (`google-generativeai`)
--   **Frontend:** HTML, Tailwind CSS, vanilla JavaScript
--   **Dependencies:** `yt-dlp`, `python-dotenv`
+## 🧠 Gemini Model
 
-## Setup and Installation
+This project uses the following Gemini model:
 
-Follow these steps to get the project running on your local machine.
+```
+models/gemini-2.5-flash
+```
 
-### 1. Prerequisites
+### Why this model?
+- Fast and cost-effective
+- Large context window
+- Supports streaming
+- Available in modern Gemini projects
 
--   Python 3.11+
--   A [Google Gemini API Key](https://makersuite.google.com/app/apikey)
+Model usage is defined in:
 
-### 2. Get Your API Key
+```
+services/gemini.py
+```
 
-1.  Go to **[Google AI Studio](https://makersuite.google.com/app/apikey)**.
-2.  Sign in and click "**Create API key in new project**".
-3.  Copy the generated key.
+---
 
-### 3. Clone the Project
+## 🛠 Technology Stack
+
+### Backend
+- Python
+- Flask
+
+### AI
+- Google Gemini API (`google-genai` SDK)
+
+### Frontend
+- HTML
+- Tailwind CSS
+- Vanilla JavaScript
+
+### Other
+- yt-dlp (transcript fetching)
+- python-dotenv (environment variables)
+
+---
+
+## 📁 Project Structure
+
+```
+yt-summarizer/
+│
+├── app.py
+├── routes/
+│   └── main.py
+├── services/
+│   ├── gemini.py
+│   └── youtube.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── css / js assets
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Prerequisites
+
+- Python **3.11+**
+- A **Google Gemini API Key**
+
+---
+
+### 2️⃣ Get Your Gemini API Key
+
+1. Visit: https://aistudio.google.com/
+2. Create or select a project
+3. Enable the **Gemini API**
+4. Generate an API key
+
+---
+
+### 3️⃣ Clone the Repository
 
 ```bash
-# Clone this repository
 git clone https://github.com/your-username/yt-summarizer.git
 cd yt-summarizer
 ```
 
-### 4. Set Up the Environment
+---
 
-Using a virtual environment is strongly recommended to keep project dependencies isolated.
+### 4️⃣ Create & Activate Virtual Environment
 
 ```bash
-# Create a virtual environment
 python -m venv venv
+```
 
-# Activate the environment
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
+**macOS / Linux**
+```bash
 source venv/bin/activate
 ```
 
-### 5. Install Dependencies
+**Windows**
+```bash
+venv\Scripts\activate
+```
 
-Install the required Python packages using pip.
+---
+
+### 5️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Configure Your API Key
+---
 
-Create a `.env` file in the root of the project. This file will hold your secret API key.
+### 6️⃣ Configure Environment Variables
 
+Create a `.env` file in the project root:
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY_HERE
 ```
-GEMINI_API_KEY="YOUR_API_KEY_HERE"
-```
 
-Replace `YOUR_API_KEY_HERE` with the key you obtained from Google AI Studio. The app is configured to load this key automatically.
+⚠️ **Do NOT wrap the key in quotes**  
+⚠️ **Never commit `.env` to GitHub**
 
-### 7. Run the Application
+---
 
-Once everything is set up, you can start the Flask server.
+### 7️⃣ Run the Application
 
 ```bash
 python app.py
 ```
 
-The application will be running at **http://localhost:5000**. Open this URL in your browser to use the app.
+Open in your browser:
+
+```
+http://localhost:5000
+```
 
 ---
+
+## 🔒 Security Notes
+
+- `.env` is excluded via `.gitignore`
+- API keys are never exposed to frontend code
+- Rotate your key immediately if leaked
+
+---
+
+## 📌 Future Improvements
+
+- Transcript chunking for very long videos
+- Summary length / style controls
+- Deployment (Render, Railway, Fly.io)
+- Transcript caching with a database
+
+---
+
+## 📄 License
+
+This project is intended for educational and personal use.

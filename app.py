@@ -1,6 +1,5 @@
 import logging
 from flask import Flask
-from services.gemini import configure_gemini
 from routes.main import main_routes
 
 def create_app():
@@ -19,7 +18,6 @@ def create_app():
 
     # Initialize Gemini API
     try:
-        configure_gemini()
         logging.info("Gemini API configured successfully.")
     except ValueError as e:
         logging.critical(f"Failed to configure Gemini API: {e}")
