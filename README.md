@@ -1,4 +1,4 @@
-# YT Summarizer ✨
+# YT Summarizer
 
 A sleek, modern web application for fetching YouTube video transcripts and generating high-quality summaries using **Google Gemini**.  
 The frontend is built with **Tailwind CSS**, featuring a clean, responsive dark-mode UI, while the backend streams AI summaries in real time.
